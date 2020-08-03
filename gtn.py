@@ -80,7 +80,7 @@ async def on_message(message):
                 title="**Game Over!**" ,
                 description=f'''Congratulations! {message.author.mention}
 You guessed the right number!
-You won **40rs** :moneybag:
+You won **50rs** :moneybag:
 The number was **{nu['number']}** :white_check_mark:
 **DM  <@515733900182421520> and <@642939163355643914> to claim your reward!**
 ''' ,
