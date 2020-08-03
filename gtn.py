@@ -88,7 +88,13 @@ The number was **{nu['number']}** :white_check_mark:
             )
             embed.set_footer(text="Guess the Number | Ekamjot#9133")
 
+            chan = client.get_channel(message.channel.id)
+            gui = client.get_guild(692576208621404186)
+
             await message.channel.send(embed=embed)
+
+            await chan.set_permissions(gui.default_role, send_messages=False)
+            await message.channel.send("Channel Locked :lock:")
 
 
         elif int(message.content) > 1500:
@@ -106,4 +112,3 @@ The number was **{nu['number']}** :white_check_mark:
 
 
 client.run("NzM5NDM3MDAxMDczMjI5ODg0.XyacXw.qn1UeHNEviWyMNl9b8ewGt57uSw")
-
