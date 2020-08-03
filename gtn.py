@@ -33,7 +33,7 @@ async def start(ctx , lower , upper , prize):
         title="**Guess the Number**" ,
         description=f'''Guess the number between ``{lower}`` and ``{upper}``! :white_check_mark:
 Prize:- **{prize}** :moneybag:
-Sponsored by :- <@449878617623625728> ''' ,
+Sponsored by :- <@515733900182421520> and <@642939163355643914> ''' ,
         color= discord.Color.blue()
 
     )
@@ -82,7 +82,7 @@ async def on_message(message):
 You guessed the right number!
 You won **40rs** :moneybag:
 The number was **{nu['number']}** :white_check_mark:
-**DM <@449878617623625728> to claim your reward!**
+**DM  <@515733900182421520> and <@642939163355643914> to claim your reward!**
 ''' ,
                 color= discord.Color.blue()
             )
@@ -91,8 +91,8 @@ The number was **{nu['number']}** :white_check_mark:
             await message.channel.send(embed=embed)
 
 
-        elif int(message.content) > 600:
-            await message.channel.send(f"{message.author.mention} The number is between ``1-600``")
+        elif int(message.content) > 1500:
+            await message.channel.send(f"{message.author.mention} The number is between ``1-1500``")
 
 
 
