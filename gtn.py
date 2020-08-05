@@ -33,7 +33,7 @@ async def start(ctx , lower , upper , prize):
         title="**Guess the Number**" ,
         description=f'''Guess the number between ``{lower}`` and ``{upper}``! :white_check_mark:
 Prize:- **{prize}** :moneybag:
-Sponsored by :- <@515733900182421520> and <@642939163355643914> ''' ,
+Sponsored by :- nobody ''' ,
         color= discord.Color.blue()
 
     )
@@ -80,16 +80,16 @@ async def on_message(message):
                 title="**Game Over!**" ,
                 description=f'''Congratulations! {message.author.mention}
 You guessed the right number!
-You won **50rs** :moneybag:
+You won **0rs** :moneybag:
 The number was **{nu['number']}** :white_check_mark:
-**DM  <@515733900182421520> and <@642939163355643914> to claim your reward!**
+**DM  nobody to claim your reward!**
 ''' ,
                 color= discord.Color.blue()
             )
             embed.set_footer(text="Guess the Number | Ekamjot#9133")
 
             chan = client.get_channel(message.channel.id)
-            gui = client.get_guild(692576208621404186)
+            gui = client.get_guild(740542421515108352)
 
             await message.channel.send(embed=embed)
 
