@@ -73,7 +73,8 @@ async def on_message(message):
     with open("gtn_json.json" , "r") as f:
         nu = json.load(f)
 
-
+        if message.channel.id == 734091229427662932:
+            return
 
         if int(message.content) == nu['number']:
             embed = discord.Embed(
