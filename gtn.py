@@ -33,7 +33,7 @@ async def start(ctx , lower , upper , prize):
         title="**Guess the Number**" ,
         description=f'''Guess the number between ``{lower}`` and ``{upper}``! :white_check_mark:
 Prize:- **{prize}** :moneybag:
-Sponsored by :- nobody ''' ,
+Sponsored by :- <@718112706917564466> ''' ,
         color= discord.Color.blue()
 
     )
@@ -80,9 +80,9 @@ async def on_message(message):
                 title="**Game Over!**" ,
                 description=f'''Congratulations! {message.author.mention}
 You guessed the right number!
-You won **0rs** :moneybag:
+You won **25rs** :moneybag:
 The number was **{nu['number']}** :white_check_mark:
-**DM  nobody to claim your reward!**
+**DM  <@718112706917564466> to claim your reward!**
 ''' ,
                 color= discord.Color.blue()
             )
@@ -97,8 +97,8 @@ The number was **{nu['number']}** :white_check_mark:
             await message.channel.send("Channel Locked :lock:")
 
 
-        elif int(message.content) > 1500:
-            await message.channel.send(f"{message.author.mention} The number is between ``1-1500``")
+        elif int(message.content) > 3000:
+            await message.channel.send(f"{message.author.mention} The number is between ``1-3000``")
 
 
 
