@@ -90,7 +90,7 @@ The number was **{nu['number']}** :white_check_mark:
             embed.set_footer(text="Guess the Number | Ekamjot#9133")
 
             chan = client.get_channel(message.channel.id)
-            gui = client.get_guild(740542421515108352)
+            gui = client.get_guild(692576208621404186)
 
             await message.channel.send(embed=embed)
 
