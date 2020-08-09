@@ -98,8 +98,8 @@ The number was **{nu['number']}** :white_check_mark:
             await message.channel.send("Channel Locked :lock:")
 
 
-        elif int(message.content) > 3000:
-            await message.channel.send(f"{message.author.mention} The number is between ``1-3000``")
+        elif int(message.content) > 5000 or int(message.content) < 2000:
+            await message.channel.send(f"{message.author.mention} The number is between ``2000-5000``")
 
 
 
